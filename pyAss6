@@ -1,0 +1,10 @@
+sno=int(input("enter student number"))
+sname=str(input("enter student name"))
+group=str(input("enter group name"))
+s1=int(input("enter OS marks"))
+s2=int(input("enter AFM marks"))
+s3=int(input("enter JAVA marks"))
+if(s1>=40 and s2>=40 and s3>=40):
+    print("pass")
+else:
+    print("fail")

@@ -1,0 +1,7 @@
+#prg to print +ve or not
+
+n=int(input("enter n value "))
+if n>0:
+    print(n,"is a positive number")
+else:
+    print(n,"is not a positive number")

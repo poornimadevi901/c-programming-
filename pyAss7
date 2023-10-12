@@ -1,0 +1,9 @@
+#prg to print given number is greater than 50
+
+n=int(input("enter n value "))
+if(n>50):
+    print(n,"greater than 50")
+    print("HI")
+else:
+    print(n,"not greater than 50")
+    print("BYE")

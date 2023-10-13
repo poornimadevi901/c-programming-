@@ -1,0 +1,33 @@
+#prg to perpare shopping mall bill
+
+s=15000
+hs=20000
+d=3000
+j=1000
+t=300
+print("*****Wel come to SP Mall*****")
+cname=input("customer name ")
+cpno=int(input("customer phone number "))
+sq=int(input("enter no of sarees "))
+hsq=int(input("enter no of half sarees "))
+dq=int(input("enter no of dressses "))
+jq=int(input("enter no of jeens "))
+tq=int(input("enter no of tops "))
+bill=(s*sq)+(hs*hsq)+(d*dq)+(j*jq)+(t*tq)
+if bill>=150000:
+    disc=bill*10/100
+elif bill>=100000:
+    disc=bill*8/100
+elif bill>=80000:
+    disc=bill*5/100
+elif bill>=10000:
+    disc=bill*3/100
+else:
+    disc=0
+price=bill-disc
+gst=price*12/100
+amount=price+gst
+print("custno: ",cpno)
+print("custname: ",cname)
+print("bill to be paid",amount)
+print("Thank you! Visit Again")

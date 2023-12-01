@@ -1,0 +1,14 @@
+Program to identify the file format
+
+filename = input("Enter the file name: ")
+file_extension = filename.split('.')[-1].lower()
+document_types = {
+    'jpeg': 'photo document',
+    'doc': 'word document',
+    'xls': 'Excel document',
+    'ppt': 'powerpoint document'
+}
+if file_extension in document_types:
+    print(document_types[file_extension])
+else:
+    print("Invalid document")
